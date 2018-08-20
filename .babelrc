@@ -1,0 +1,27 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "Actions": "./sec/actions",
+          "Components": "./src/components",
+          "Core": "./src/core",
+          "MyRealm": "./src/realm",
+          "realm": "./node_modules/realm"
+        },
+        "extensions": [
+          ".native",
+          ".ios.js",
+          ".native.js",
+          ".js",
+          ".ios.json",
+          ".native.json",
+          ".json"
+        ]
+      }
+    ]
+  ]
+}
